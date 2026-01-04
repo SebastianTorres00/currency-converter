@@ -11,6 +11,7 @@ Elegí el patrón Container/Presentational para organizar el código ya que sepa
 De esta forma, se puede ampliar la lógica del flujo sin modificar nada del componente ni ensuciándolo, solo pasándole las props necesarias
 
 Organización del código
+```
 src/
 ├── components/          # Componentes reutilizables (Select, svg, etc)
 └── features/            # Cada funcionalidad principal
@@ -18,6 +19,7 @@ src/
         ├── components/  # Componentes solo para UI
         └── container/   # Lógica y estado
         └── hooks/       # Custom-hooks para utilizar en ./container y separar la logica de los componentes
+```
 Cómo funciona cada parte:
 Container: Maneja toda la lógica (llamadas a API, estado, cálculos)
 
